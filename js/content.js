@@ -1,18 +1,41 @@
 var myArray = 'https://corsanywhere.herokuapp.com/https://nepse-data-api.herokuapp.com/data/todaysprice'
 
 document.addEventListener("DOMContentLoaded", function () {
-$.getJSON(myArray, function (data) {
+    $.getJSON(myArray, function (data) {
 
-    console.log(data)
+        // console.log(data)
 
-    buildTable(myArray)
+        $('#search-input').on('keyup', function () {
+            var value = $(this).val()
+            console.log('Value:', value);
+            var data = searchTable(value, myArray)
+            buildTable(data)
 
+        })
 
-    function buildTable(myArray) {
-        var table = document.getElementById('myTable')
+        buildTable(myArray)
 
-        for (var i = 0; i < data.length; i++) {
-            var row = `<tr>
+        function searchTable(value, data) {
+
+            var filteredData = []
+
+            for (var i = 0; i < data.length; i++) {
+                value = value.toLowerCase();
+                var name = data[i].companyName;
+                if (name = value) {
+                    filteredData.push(data[i])
+
+                }
+            }
+
+            return filteredData
+        }
+
+        function buildTable(myArray) {
+            var table = document.getElementById('myTable')
+
+            for (var i = 0; i < data.length; i++) {
+                var row = `<tr>
                     <td>${data[i].companyName}</td>
                     <td>${data[i].amount}</td>
                     <td>${data[i].closingPrice}</td>
@@ -25,8 +48,8 @@ $.getJSON(myArray, function (data) {
                 document.getElementById("myTable").innerHTML += row;
 
 
-          }
-    }
+            }
+        }
 
-});
+    });
 });
