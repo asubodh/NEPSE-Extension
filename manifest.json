@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "NEPSE Extension",
+    "version": "1.0.0",
+    "description": "Dsplays the Live Stock Status.",
+    "content_scripts": [{
+        "matches":[
+           "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }],
+    "action": {
+        "default_popup": "Popup.html",
+        "default_title": "NEPSE Live"
+    }
+}
