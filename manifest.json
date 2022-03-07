@@ -7,9 +7,14 @@
         "matches":[
            "<all_urls>"
         ],
-        "js": ["content.js"]
+        "js": ["js/content.js"]
     }],
     "action": {
+        "default_icon":{
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        },
         "default_popup": "Popup.html",
         "default_title": "NEPSE Live"
     }
