@@ -1,6 +1,6 @@
 # NEPSE Extension
 <div align="center">
-<img src="icon.png" height="100" width="100"/>
+<img src="img/icon.png" height="100" width="100"/>
 </div>
 It is a chrome extension which pulls data of NEPSE Live Stock from a json file and displays it in the form of table.
 
