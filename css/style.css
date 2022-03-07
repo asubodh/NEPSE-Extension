@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Oswald&family=Roboto:wght@500&family=Ubuntu&display=swap');
-*{
-    /*height: 500px;
-    width: 400px;
-    border: 90px;
-    border-color: black;
-*/}
+
+/* Scroll Bar*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: orange white;
+    padding: 10px;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(1, 156, 213);
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+
 .header{
+    font-size: bold;
     float: left;
     padding-left: 5px;
     font-family: 'Oswald', sans-serif;
