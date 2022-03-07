@@ -1,4 +1,4 @@
-# NEPSE-Extension# NEPSE Extension
+# NEPSE Extension
 
 It is a chrome extension which pulls data of NEPSE Live Stock from a json file and displays it in the form of table.
 
