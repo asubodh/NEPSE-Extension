@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             for (var i = 0; i < data.length; i++) {
                 value = value.toLowerCase();
                 var name = data[i].companyName;
-                if (name = value) {
+                if (name.toLowerCase() = value) {
                     filteredData.push(data[i])
 
                 }
