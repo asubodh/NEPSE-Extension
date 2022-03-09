@@ -5,12 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // console.log(data)
 
-        $('#search-input').on('keyup', function () {
+        $('#search-input').on('keydown', function (event) {
+            if (event.keyCode == 13) {
             var value = $(this).val()
             console.log('Value:', value);
             var data = searchTable(value, myArray)
             buildTable(data)
-
+            }
         })
 
         buildTable(myArray)
@@ -20,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
             var filteredData = []
 
             for (var i = 0; i < data.length; i++) {
-                value = value.toLowerCase();
+                value = value;
                 var name = data[i].companyName;
-                if (name.toLowerCase() = value) {
+                if (name = value) {
                     filteredData.push(data[i])
 
                 }
