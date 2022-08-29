@@ -31,6 +31,7 @@ Please make sure to update tests as appropriate.
 ✅ Display in the Form of Table\
 ✅ Convert it Into an Browser Extension\
 ⬛ Add a Search Bar\
+⬛ Add some kind of curve to show the representation of values like merolagaani\
 ⬛ Keep Suggesting
 
 ## License
