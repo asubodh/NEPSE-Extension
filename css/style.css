@@ -3,21 +3,21 @@
 /* Scroll Bar*/
 * {
     scrollbar-width: thin;
-    scrollbar-color: orange white;
+    scrollbar-color: rgb(209, 138, 5) white;
     padding: 10px;
   }
   
-  /* Works on Chrome, Edge, and Safari */
+  /* This Works on Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 12px;
   }
   
   *::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(68, 10, 226, 0);
   }
   
   *::-webkit-scrollbar-thumb {
-    background-color: rgb(1, 156, 213);
+    background-color: rgb(75, 1, 213);
     border-radius: 20px;
     border: 3px solid white;
   }
@@ -30,4 +30,8 @@
 }   
 th{
     color: #fff;
+}
+
+.table {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
